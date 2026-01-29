@@ -72,4 +72,131 @@ Summaries are organized into:
 
 ---
 
+## 🧪 Example Output
+
+### 🧠 AI-Generated Clinical Summary
+- Clearly separated clinical sections
+- Easy to scan during patient encounters
+- Ready for charting and review
+
+### 🧬 FHIR Export
+- Machine-readable JSON
+- EHR-ready format
+- Safe for healthcare data pipelines
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the Repository
+
+git clone https://github.com/<your-username>/ai-doc-intelligence-hub.git
+cd ai-doc-intelligence-hub
+
+---
+
+## 🛠 Getting Started
+
+Follow the steps below to run the application locally.
+
+---
+
+## 2️⃣ Backend Setup (FastAPI)
+
+Navigate to the backend directory:
+
+cd backend
+
+
+### Create a Virtual Environment
+
+python -m venv venv
+
+
+Activate the Virtual Environment
+Windows
+
+venv\Scripts\activate
+macOS / Linux
+
+source venv/bin/activate
+Install Backend Dependencies
+pip install -r requirements.txt
+🔐 Environment Configuration
+Create a .env file inside the backend/ directory:
+
+GEMINI_API_KEY=your_gemini_api_key_here
+⚠️ Never commit .env files to GitHub
+
+▶️ Run the Backend Server
+Start the FastAPI server:
+
+uvicorn main:app --reload
+Backend will be available at:
+
+http://127.0.0.1:8000
+Swagger API documentation:
+
+http://127.0.0.1:8000/docs
+🖥 3️⃣ Frontend Setup (React + Vite)
+Navigate to the frontend directory:
+
+cd frontend
+Install frontend dependencies:
+
+npm install
+Start the development server:
+
+npm run dev
+Frontend will run at:
+
+http://localhost:5173
+🔐 Security & API Keys
+API keys are never committed
+
+.env is excluded via .gitignore
+
+.env.example is provided for reference
+
+✅ Recommended for Production
+Secret Manager (AWS / GCP / Azure)
+
+Environment-based configuration
+
+Encrypted storage for sensitive credentials
+
+🧠 Roadmap
+✅ Clinical-grade medical summarization
+
+✅ FHIR-ready export
+
+⏳ Multi-document comparison
+
+⏳ Role-based summaries (Doctor vs Patient)
+
+⏳ Direct EHR integration (FHIR server)
+
+⏳ Audit logs & compliance tracking
+
+⚠️ Disclaimer
+This software is intended to assist healthcare professionals and does not replace medical judgment.
+
+All AI-generated outputs must be reviewed by qualified clinicians before clinical use.
+
+👤 Author
+Sai Akshitha Kshintala
+AI Engineer | Healthcare AI | Full-Stack Developer
+
+📧 Email: your-email@example.com
+🔗 GitHub: https://github.com/your-username
+
+⭐ Support
+If you find this project useful:
+
+⭐ Star the repository
+
+🧑‍⚕️ Share with healthcare professionals
+
+🛠 Contribute or open issues
+
 
