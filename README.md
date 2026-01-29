@@ -91,14 +91,15 @@ Summaries are organized into:
 ### 1️⃣ Clone the Repository
 
 Follow the steps below to run the application locally.
-
+```bash
 git clone https://github.com/saiakshithakshintala266-collab/ai-doc-intelligence-hub.git
 
 cd ai-doc-intelligence-hub
+```
 
 ## 2️⃣ Backend Setup (FastAPI)
 
-Navigate to the backend directory:
+### Navigate to the backend directory:
 
 ```bash
 cd backend
@@ -110,26 +111,26 @@ cd backend
 python -m venv venv
 ```
 
-Activate the Virtual Environment
-Windows
+### Activate the Virtual Environment
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-macOS / Linux
+**macOS / Linux**
 
 ```bash
 source venv/bin/activate
 ```
 
-Install Backend Dependencies
+### Install Backend Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-🔐 Environment Configuration
+### 🔐 Environment Configuration
 
 Create a .env file inside the backend/ directory:
 
@@ -137,78 +138,58 @@ Create a .env file inside the backend/ directory:
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-▶️ Run the Backend Server
+### ▶️ Run the Backend Server
 
-Start the FastAPI server:
+#### Start the FastAPI server:
 ```bash
 uvicorn main:app --reload
 ```
-Backend will be available at:
+#### Backend will be available at:
 
 http://127.0.0.1:8000
 
-Swagger API documentation:
+#### Swagger API documentation:
 
 http://127.0.0.1:8000/docs
 
-🖥 3️⃣ Frontend Setup (React + Vite)
+## 🖥 3️⃣ Frontend Setup (React + Vite)
 
-Navigate to the frontend directory:
+### Navigate to the frontend directory:
 ```bash
 cd frontend
 ```
-Install frontend dependencies:
+### Install frontend dependencies:
 ```bash
 npm install
 ```
-Start the development server:
+### Start the development server:
 ```bash
 npm run dev
 ```
-Frontend will run at:
-
+#### Frontend will run at:
 http://localhost:5173
 
-🔐 Security & API Keys
 
-API keys are never committed
+## ⚠️ Disclaimer
+- This software is intended to assist healthcare professionals and does not replace medical judgment.
+- All AI-generated outputs must be reviewed by qualified clinicians before clinical use.
 
-.env is excluded via .gitignore
+# 👤 Author
 
-.env.example is provided for reference
+# Sai Akshith Akshintala
 
-✅ Recommended for Production
+## AI Engineer | Healthcare AI | Full-Stack Developer
 
-Secret Manager (AWS / GCP / Azure)
+📧 Email: your-saiakshithakshintala266@gmail.com
 
-Environment-based configuration
+🔗 GitHub: https://github.com/saiakshithakshintala266-collab
 
-Encrypted storage for sensitive credentials
-
-
-⚠️ Disclaimer
-This software is intended to assist healthcare professionals and does not replace medical judgment.
-
-All AI-generated outputs must be reviewed by qualified clinicians before clinical use.
-
-👤 Author
-
-Sai Akshitha Kshintala
-
-AI Engineer | Healthcare AI | Full-Stack Developer
-
-📧 Email: your-email@example.com
-
-🔗 GitHub: https://github.com/your-username
-
-⭐ Support
+## ⭐ Support
 
 If you find this project useful:
 
-⭐ Star the repository
-
-🧑‍⚕️ Share with healthcare professionals
-
-🛠 Contribute or open issues
+- ⭐ Star the repository
+- 🧑‍⚕️ Share with healthcare professionals
+- 🛠 Contribute or open issues
 
 
