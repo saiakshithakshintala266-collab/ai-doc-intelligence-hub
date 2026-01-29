@@ -180,7 +180,7 @@ http://localhost:5173
 
 ## AI Engineer | Healthcare AI | Full-Stack Developer
 
-📧 Email: your-saiakshithakshintala266@gmail.com
+📧 Email: saiakshithakshintala266@gmail.com
 
 🔗 GitHub: https://github.com/saiakshithakshintala266-collab
 
