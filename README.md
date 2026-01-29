@@ -184,12 +184,4 @@ http://localhost:5173
 
 🔗 GitHub: https://github.com/saiakshithakshintala266-collab
 
-## ⭐ Support
-
-If you find this project useful:
-
-- ⭐ Star the repository
-- 🧑‍⚕️ Share with healthcare professionals
-- 🛠 Contribute or open issues
-
 
