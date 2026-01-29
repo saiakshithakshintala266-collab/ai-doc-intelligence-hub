@@ -90,68 +90,87 @@ Summaries are organized into:
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/<your-username>/ai-doc-intelligence-hub.git
-cd ai-doc-intelligence-hub
-
----
-
-## 🛠 Getting Started
-
 Follow the steps below to run the application locally.
 
----
+git clone https://github.com/saiakshithakshintala266-collab/ai-doc-intelligence-hub.git
+
+cd ai-doc-intelligence-hub
 
 ## 2️⃣ Backend Setup (FastAPI)
 
 Navigate to the backend directory:
 
+```bash
 cd backend
-
+```
 
 ### Create a Virtual Environment
 
+```bash
 python -m venv venv
-
+```
 
 Activate the Virtual Environment
 Windows
 
+```bash
 venv\Scripts\activate
+```
+
 macOS / Linux
 
+```bash
 source venv/bin/activate
+```
+
 Install Backend Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
 🔐 Environment Configuration
+
 Create a .env file inside the backend/ directory:
 
+```bash
 GEMINI_API_KEY=your_gemini_api_key_here
-⚠️ Never commit .env files to GitHub
+```
 
 ▶️ Run the Backend Server
-Start the FastAPI server:
 
+Start the FastAPI server:
+```bash
 uvicorn main:app --reload
+```
 Backend will be available at:
 
 http://127.0.0.1:8000
+
 Swagger API documentation:
 
 http://127.0.0.1:8000/docs
+
 🖥 3️⃣ Frontend Setup (React + Vite)
+
 Navigate to the frontend directory:
-
+```bash
 cd frontend
+```
 Install frontend dependencies:
-
+```bash
 npm install
+```
 Start the development server:
-
+```bash
 npm run dev
+```
 Frontend will run at:
 
 http://localhost:5173
+
 🔐 Security & API Keys
+
 API keys are never committed
 
 .env is excluded via .gitignore
@@ -159,24 +178,13 @@ API keys are never committed
 .env.example is provided for reference
 
 ✅ Recommended for Production
+
 Secret Manager (AWS / GCP / Azure)
 
 Environment-based configuration
 
 Encrypted storage for sensitive credentials
 
-🧠 Roadmap
-✅ Clinical-grade medical summarization
-
-✅ FHIR-ready export
-
-⏳ Multi-document comparison
-
-⏳ Role-based summaries (Doctor vs Patient)
-
-⏳ Direct EHR integration (FHIR server)
-
-⏳ Audit logs & compliance tracking
 
 ⚠️ Disclaimer
 This software is intended to assist healthcare professionals and does not replace medical judgment.
@@ -184,13 +192,17 @@ This software is intended to assist healthcare professionals and does not replac
 All AI-generated outputs must be reviewed by qualified clinicians before clinical use.
 
 👤 Author
+
 Sai Akshitha Kshintala
+
 AI Engineer | Healthcare AI | Full-Stack Developer
 
 📧 Email: your-email@example.com
+
 🔗 GitHub: https://github.com/your-username
 
 ⭐ Support
+
 If you find this project useful:
 
 ⭐ Star the repository
