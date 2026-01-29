@@ -1,151 +1,75 @@
 # 🧠 AI Medical Document Intelligence Hub
 
-Clinical-grade medical document summarization and EHR-ready data extraction powered by Generative AI.
+**Clinical-grade medical document summarization and FHIR-ready data extraction powered by Generative AI.**
 
-📌 Overview
+---
 
-AI Medical Document Intelligence Hub is a healthcare-focused AI application designed to automatically analyze, summarize, and structure medical documents such as outpatient clinical reports, discharge summaries, and consultation notes.
+## 🚀 Overview
 
-The platform converts unstructured medical PDFs into:
+**AI Medical Document Intelligence Hub** is a full-stack healthcare application that transforms **unstructured medical PDFs** (clinical notes, outpatient reports, discharge summaries) into:
 
-1)Clear, clinician-readable summaries
+- ✅ **Clinician-ready structured summaries**
+- ✅ **Patient-friendly readable reports**
+- ✅ **FHIR-ready JSON bundles for EHR integration**
 
-2)Structured, FHIR-ready data suitable for EHR integration
+The system is designed to **reduce documentation burden**, **improve clinical efficiency**, and **enable interoperability** across healthcare systems.
 
-3)Patient-friendly explanations (future-ready)
+---
 
-This reduces documentation burden, improves clinical efficiency, and enables interoperability across healthcare systems.
+## 🎯 Who Is This For?
 
-🎯 Who Is This For?
+- **Clinics & Hospitals** – Faster chart review, reduced cognitive load  
+- **EHR Providers** – Plug-and-play AI summarization module  
+- **Physicians & Nurses** – Clear, structured summaries in seconds  
+- **HealthTech Startups** – Foundation for medical AI workflows  
+- **Developers** – Reference architecture for healthcare-grade AI apps  
 
-Clinics & Hospitals – Faster chart reviews and reduced cognitive load
+---
 
-EHR Providers – Plug-and-play clinical summarization modules
+## ✨ Key Features
 
-Physicians & Nurses – Clear, structured summaries in seconds
+### 🩺 Medical-Grade AI Summarization
+- Structured according to **clinical best practices**
+- No hallucinations or invented medical facts
+- Professional medical language suitable for EHRs
 
-Health-tech Startups – Foundation for medical AI workflows
+### 📄 Secure PDF Upload
+- Upload outpatient notes, clinical reports, discharge summaries
+- Robust text extraction using **PyMuPDF**
 
-✨ Key Features
-
-✅ Medical-Grade AI Summarization
-
-Structured output using clinical best practices
-
-No hallucinations or invented data
-
-Suitable for professional medical use
-
-✅ PDF Upload & Text Extraction
-
-Secure medical document upload
-
-Robust PDF text parsing
-
-✅ Structured Clinical Output
-
+### 🧱 Structured Clinical Output
 Summaries are organized into:
+- Chief Complaint  
+- History of Present Illness  
+- Diagnosis  
+- Medications  
+- Follow-Up Instructions  
 
-*Chief Complaint*
+### 🧬 FHIR-Ready Export
+- Generates **FHIR Bundle (DocumentReference)**
+- Designed for **EHR ingestion & interoperability**
+- Easily extensible to Observation, Condition, MedicationRequest, etc.
 
-*History of Present Illness*
+### 🎨 Modern Clinician-Friendly UI
+- Clean, readable layout
+- Section-highlighted summaries
+- Designed for both **doctors and patients**
 
-*Diagnosis*
+---
 
-*Medications*
+## 🛠 Tech Stack
 
-*Follow-Up Instructions*
+### 🔧 Backend
+- **FastAPI** – High-performance Python API
+- **Google Gemini 2.5** – Medical-grade generative summarization
+- **PyMuPDF** – PDF text extraction
+- **FHIR (HL7)** – Healthcare interoperability standard
 
-✅ FHIR-Ready Export
+### 🎨 Frontend
+- **React (Vite)** – Modern frontend framework
+- **Tailwind CSS** – Clean, responsive UI
+- **Component-based architecture** – Reusable and scalable
 
-Generates FHIR Bundle (DocumentReference)
-
-Designed for EHR ingestion and interoperability
-
-✅ Modern Clinician-Friendly UI
-
-Clean, readable layout
-
-Section highlighting with visual hierarchy
-
-Designed for doctors, not generic users
-
-🏗️ Tech Stack
-
-Backend
-
-FastAPI – High-performance Python API
-
-Google Gemini 2.5 – Medical-grade generative summarization
-
-PyPDF2 / PDFMiner – Medical document text extraction
-
-FHIR JSON – Healthcare interoperability standard
-
-Frontend
-
-React (Vite) – Modern frontend framework
-
-Tailwind CSS – Clean, responsive UI
-
-Component-based design – Reusable, scalable UI
-
-🚀 Getting Started
-
-1️⃣ Clone the Repository
-
-git clone https://github.com/<your-username>/ai-doc-intelligence-hub.git
-
-cd ai-doc-intelligence-hub
-
-2️⃣ Backend Setup
-
-cd backend
-
-python -m venv venv
-
-venv\Scripts\activate   # Windows
-
-source venv/bin/activate  # macOS/Linux
-
-pip install -r requirements.txt
-
-Create a .env file:
-
-GEMINI_API_KEY=your_google_gemini_api_key
-
-Run the backend:
-
-uvicorn main:app --reload
-
-Backend will be available at:
-
-http://127.0.0.1:8000
-
-3️⃣ Frontend Setup
-
-cd frontend
-
-npm install
-
-npm run dev
+---
 
 
-Frontend will be available at:
-
-http://localhost:5173
-
-🤝 Contributing
-
-Contributions are welcome.
-Please open an issue or submit a pull request.
-
-⭐ Why This Project Matters
-
-Medical professionals spend 30–40% of their time on documentation.
-This project exists to give that time back.
-
-📜 Disclaimer
-
-This application is not a medical decision-making system.
-It is intended to assist healthcare professionals, not replace clinical judgment.
