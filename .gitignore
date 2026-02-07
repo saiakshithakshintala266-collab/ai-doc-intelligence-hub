@@ -10,6 +10,12 @@ dist/
 # --- Environment Variables ---
 .env
 .env.*
+frontend/.env
+frontend/.env.*
+
+# Allow example env files
+!.env.*.example
+!frontend/.env.*.example
 
 # --- OS ---
 .DS_Store
