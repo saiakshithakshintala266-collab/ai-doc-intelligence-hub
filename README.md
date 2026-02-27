@@ -169,6 +169,18 @@ npm run dev
 #### Frontend will run at:
 http://localhost:5173
 
+## 📸 API Demo
+
+### 🔹 Medical Summarization Endpoint (Swagger UI)
+![Swagger UI Endpoint](assets/swagger-endpoint.png)
+
+> Interactive Swagger UI allowing secure PDF uploads and AI-powered summarization.
+
+### 🔹 Example Structured Summary Output
+![Structured Summary Output](assets/summary-response.png)
+
+> AI-generated structured clinical summary with FHIR-ready JSON output.
+
 
 ## ⚠️ Disclaimer
 - This software is intended to assist healthcare professionals and does not replace medical judgment.
